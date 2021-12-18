@@ -12,13 +12,18 @@ import NoteIcon from '@mui/icons-material/Note';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import VideocamIcon from '@mui/icons-material/Videocam';
 import KeyboardIcon from '@mui/icons-material/Keyboard';
+import { useDispatch } from 'react-redux';
+import { openSendMessage } from './features/mailSlice';
 
 function Sidebar() {
+  const dispatch = useDispatch();
+
   return (
     <div className='sidebar'>
       <Button
         className='sidebar-compose'
         startIcon={<AddIcon fontSize='large' />}
+        onClick={() => dispatch(openSendMessage)}
       >
         Compose
       </Button>
