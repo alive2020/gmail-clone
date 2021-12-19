@@ -75,46 +75,6 @@ function EmailList() {
             time={new Date(timestamp?.seconds * 1000).toUTCString()}
           />
         ))}
-          {emails.map(({ id, data: { to, subject, message, timestamp } }) => (
-          <EmailRow
-            id={id}
-            key={id}
-            title={to}
-            subject={subject}
-            description={message}
-            time={new Date(timestamp?.seconds * 1000).toUTCString()}
-          />
-        ))}
-          {emails.map(({ id, data: { to, subject, message, timestamp } }) => (
-          <EmailRow
-            id={id}
-            key={id}
-            title={to}
-            subject={subject}
-            description={message}
-            time={new Date(timestamp?.seconds * 1000).toUTCString()}
-          />
-        ))}
-          {emails.map(({ id, data: { to, subject, message, timestamp } }) => (
-          <EmailRow
-            id={id}
-            key={id}
-            title={to}
-            subject={subject}
-            description={message}
-            time={new Date(timestamp?.seconds * 1000).toUTCString()}
-          />
-        ))}
-          {emails.map(({ id, data: { to, subject, message, timestamp } }) => (
-          <EmailRow
-            id={id}
-            key={id}
-            title={to}
-            subject={subject}
-            description={message}
-            time={new Date(timestamp?.seconds * 1000).toUTCString()}
-          />
-        ))}
       </div>
     </div>
   );
