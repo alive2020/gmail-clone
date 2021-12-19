@@ -5,6 +5,7 @@
 - React-Router,
 - Redux,
 - Firebase,
+- Material UI Icons
 
 #### In every change and update of a project use following commands to deploy:
 ### `npm run build` & `firebase deploy`
