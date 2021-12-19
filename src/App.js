@@ -22,7 +22,7 @@ function App() {
             <Route path='/' exact element={<EmailList />}></Route>
           </Routes>
         </div>
-        {sendMessageIsOpen && <SendMail />}
+        {!sendMessageIsOpen ? 'false' : <SendMail />}
       </div>
     </Router>
   );

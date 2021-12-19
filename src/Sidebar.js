@@ -23,7 +23,7 @@ function Sidebar() {
       <Button
         className='sidebar-compose'
         startIcon={<AddIcon fontSize='large' />}
-        onClick={() => dispatch(openSendMessage)}
+        onClick={() => dispatch(openSendMessage())}
       >
         Compose
       </Button>
